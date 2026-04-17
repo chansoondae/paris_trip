@@ -29,6 +29,7 @@ export const schedules: DaySchedule[] = [
         category: 'transport',
         bookingStatus: 'booked',
         note: '티웨이항공 TW0401 · 비즈니스석 · 15시간 직항',
+        imageUrl: '/images/incheon-airport.jpg',
       },
       {
         id: 'day1-0',
@@ -40,6 +41,7 @@ export const schedules: DaySchedule[] = [
         category: 'transport',
         bookingStatus: 'booked',
         note: '"Lee Sisters" 피켓 확인 후 탑승',
+        imageUrl: '/images/cdg-airport.jpg',
       },
       {
         id: 'day1-1',
@@ -51,6 +53,7 @@ export const schedules: DaySchedule[] = [
         category: 'rest',
         bookingStatus: 'booked',
         note: '짐 정리 후 충분한 휴식 취하기',
+        imageUrl: '/images/hotel-mercure.jpg',
       },
       {
         id: 'day1-2',
@@ -63,6 +66,7 @@ export const schedules: DaySchedule[] = [
         category: 'landmark',
         bookingStatus: 'not_required',
         note: '매 정시에 5분간 반짝이는 조명쇼 감상 추천',
+        imageUrl: '/images/eiffel-night.jpg',
       },
     ],
   },
@@ -84,6 +88,7 @@ export const schedules: DaySchedule[] = [
         category: 'museum',
         bookingStatus: 'booked',
         note: '09:20 훈장 박물관 정문 앞 집결, 티켓 구매 완료',
+        imageUrl: '/images/musee-dorsay.jpg',
       },
       {
         id: 'day2-2',
@@ -103,6 +108,7 @@ export const schedules: DaySchedule[] = [
         category: 'meal',
         bookingStatus: 'booked',
         note: '예약 완료',
+        imageUrl: '/images/les-antiquaires.jpg',
       },
       {
         id: 'day2-4',
@@ -114,14 +120,19 @@ export const schedules: DaySchedule[] = [
           'https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e+de+l%27Orangerie+Paris',
         category: 'museum',
         bookingStatus: 'not_required',
+        imageUrl: '/images/orangerie.jpg',
       },
       {
         id: 'day2-5',
         startTime: '16:00',
-        title: '커피 타임',
+        title: '커피 타임 — Verlet',
+        description: '1880년부터 이어온 파리의 클래식 커피숍',
+        placeName: 'Café Verlet Paris',
+        googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Verlet+Paris',
         category: 'cafe',
         bookingStatus: 'not_required',
-        note: '파리 카페 문화 즐기기',
+        note: '팔레 로얄 바로 옆, 파리에서 가장 오래된 커피숍 중 하나',
+        imageUrl: '/images/cafe-verlet.jpg',
       },
       {
         id: 'day2-6',
@@ -134,6 +145,7 @@ export const schedules: DaySchedule[] = [
         category: 'landmark',
         bookingStatus: 'not_required',
         note: '루브르는 외관 사진만 (내부 투어 없음)',
+        imageUrl: '/images/palais-royal.jpg',
       },
       {
         id: 'day2-7',
@@ -145,6 +157,7 @@ export const schedules: DaySchedule[] = [
         category: 'rest',
         bookingStatus: 'not_required',
         note: '시차 적응 중 — 충분한 수면 권장',
+        imageUrl: '/images/hotel-mercure.jpg',
       },
     ],
   },
@@ -166,6 +179,7 @@ export const schedules: DaySchedule[] = [
         category: 'landmark',
         bookingStatus: 'booked',
         note: '티켓 예약 완료',
+        imageUrl: '/images/sainte-chapelle.jpg',
       },
       {
         id: 'day3-2',
@@ -178,6 +192,7 @@ export const schedules: DaySchedule[] = [
         category: 'landmark',
         bookingStatus: 'need_booking',
         note: '티켓 예약 2일 전 오픈 — 여행 2일 전 확인 필요',
+        imageUrl: '/images/notre-dame.jpg',
       },
       {
         id: 'day3-3',
@@ -190,6 +205,7 @@ export const schedules: DaySchedule[] = [
         category: 'meal',
         bookingStatus: 'booked',
         note: '예약 완료',
+        imageUrl: '/images/joel-robuchon.jpg',
       },
       {
         id: 'day3-4',
@@ -201,6 +217,7 @@ export const schedules: DaySchedule[] = [
           'https://www.google.com/maps/search/?api=1&query=Arc+de+Triomphe+Paris',
         category: 'landmark',
         bookingStatus: 'not_required',
+        imageUrl: '/images/arc-de-triomphe.jpg',
       },
       {
         id: 'day3-5',
@@ -212,6 +229,7 @@ export const schedules: DaySchedule[] = [
         category: 'transport',
         bookingStatus: 'not_required',
         note: '쇼핑 & 카페 즐기기',
+        imageUrl: '/images/champs-elysees.jpg',
       },
     ],
   },
@@ -233,6 +251,7 @@ export const schedules: DaySchedule[] = [
         category: 'landmark',
         bookingStatus: 'booked',
         note: '티켓 구매 완료',
+        imageUrl: '/images/montmartre.jpg',
       },
       {
         id: 'day4-2',
@@ -244,6 +263,7 @@ export const schedules: DaySchedule[] = [
         category: 'cafe',
         bookingStatus: 'not_required',
         note: '에클레어 꼭 맛보기!',
+        imageUrl: '/images/boulangerie.jpg',
       },
       {
         id: 'day4-3',
@@ -255,6 +275,7 @@ export const schedules: DaySchedule[] = [
         category: 'landmark',
         bookingStatus: 'not_required',
         note: '도보 이동',
+        imageUrl: '/images/sacre-coeur.jpg',
       },
       {
         id: 'day4-4',
@@ -266,6 +287,7 @@ export const schedules: DaySchedule[] = [
         category: 'museum',
         bookingStatus: 'not_required',
         note: '정원 입장 + 카페에서 커피 한 잔',
+        imageUrl: '/images/musee-montmartre.jpg',
       },
       {
         id: 'day4-5',
@@ -278,6 +300,7 @@ export const schedules: DaySchedule[] = [
         category: 'meal',
         bookingStatus: 'not_required',
         note: '파리에서 즐기는 한식',
+        imageUrl: '/images/restaurant-ido.jpg',
       },
       {
         id: 'day4-6',
@@ -290,6 +313,7 @@ export const schedules: DaySchedule[] = [
         category: 'museum',
         bookingStatus: 'not_required',
         note: '무료 입장',
+        imageUrl: '/images/musee-art-moderne.jpg',
       },
     ],
   },

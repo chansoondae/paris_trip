@@ -12,6 +12,7 @@ export interface ScheduleItem {
   category: Category;
   bookingStatus: BookingStatus;
   note?: string;
+  imageUrl?: string;
 }
 
 export interface DaySchedule {

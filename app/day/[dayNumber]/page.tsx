@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import {
   Palette,
@@ -102,7 +103,20 @@ function TimelineItem({
 
       {/* Card */}
       <div className="flex-1 pb-5">
-        <div className="bg-white rounded-2xl border border-[#F0EAE0] shadow-sm p-4 mt-2">
+        <div className="bg-white rounded-2xl border border-[#F0EAE0] shadow-sm overflow-hidden mt-2">
+          {/* Image */}
+          {item.imageUrl && (
+            <div className="relative w-full h-36">
+              <Image
+                src={item.imageUrl}
+                alt={item.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 512px) 100vw, 512px"
+              />
+            </div>
+          )}
+          <div className="p-4">
           {/* Icon + Title */}
           <div className="flex items-start gap-3 mb-2">
             <div
@@ -159,6 +173,7 @@ function TimelineItem({
 
           {/* Comments */}
           <Comments scheduleItemId={`day${dayNumber}-${item.id}`} themeColor={themeColor} />
+          </div>
         </div>
       </div>
     </div>
