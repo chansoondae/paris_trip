@@ -78,6 +78,18 @@ export const schedules: DaySchedule[] = [
     themeColor: '#4A6FA5',
     items: [
       {
+        id: 'day2-0',
+        startTime: '07:00',
+        title: '아침 — Maison du Pain',
+        description: '오르세 투어 전 아침 식사',
+        placeName: 'Maison du Pain',
+        googleMapsUrl: 'https://maps.app.goo.gl/gks3qtYuVbrevVGi8',
+        category: 'cafe',
+        bookingStatus: 'not_required',
+        note: '07:00 오픈',
+        imageUrl: '/images/maison-du-pain.jpg',
+      },
+      {
         id: 'day2-1',
         startTime: '08:50',
         title: '오르세 미술관 가이드 투어',
@@ -233,6 +245,16 @@ export const schedules: DaySchedule[] = [
         note: '쇼핑 & 카페 즐기기',
         imageUrl: '/images/champs-elysees.jpg',
       },
+      {
+        id: 'day3-6',
+        title: '카페 — Les Deux Magots',
+        description: '파리 생제르맹의 전설적인 카페. 바로 옆 Café de Flore도 좋아요 ☕',
+        placeName: 'Les Deux Magots',
+        googleMapsUrl: 'https://maps.app.goo.gl/Nbd6TS5oJonLo27aA',
+        category: 'cafe',
+        bookingStatus: 'not_required',
+        imageUrl: '/images/les-deux-magots.jpg',
+      },
     ],
   },
   {
@@ -293,11 +315,10 @@ export const schedules: DaySchedule[] = [
       {
         id: 'day4-5',
         startTime: '13:00',
-        title: '점심 — 한식당 이도',
+        title: '점심 — 한식당 Yido',
         description: '파리의 한국 식당',
-        placeName: 'Restaurant Ido Paris',
-        googleMapsUrl:
-          'https://www.google.com/maps/search/?api=1&query=Restaurant+Ido+Paris',
+        placeName: 'Restaurant Yido Paris',
+        googleMapsUrl: 'https://maps.app.goo.gl/J61mKzDQ7ChWkT318',
         category: 'meal',
         bookingStatus: 'not_required',
         note: '파리에서 즐기는 한식',
