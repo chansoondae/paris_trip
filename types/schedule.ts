@@ -14,6 +14,7 @@ export interface ScheduleItem {
   note?: string;
   imageUrl?: string;
   ticketUrl?: string;
+  additionalMaps?: { label: string; url: string }[];
 }
 
 export interface DaySchedule {

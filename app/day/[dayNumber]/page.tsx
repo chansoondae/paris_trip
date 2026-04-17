@@ -172,6 +172,29 @@ function TimelineItem({
             </a>
           )}
 
+          {/* Additional map links */}
+          {item.additionalMaps && (
+            <div className="flex flex-wrap gap-2 mt-3">
+              {item.additionalMaps.map((m) => (
+                <a
+                  key={m.label}
+                  href={m.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors duration-150"
+                  style={{
+                    color: themeColor,
+                    borderColor: `${themeColor}50`,
+                    backgroundColor: `${themeColor}08`,
+                  }}
+                >
+                  <MapPin size={12} />
+                  {m.label}
+                </a>
+              ))}
+            </div>
+          )}
+
           {/* Map link */}
           {mapsUrl && (
             <a
