@@ -86,10 +86,10 @@ function TimelineItem({
       : null);
 
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-2">
       {/* Time column */}
-      <div className="flex flex-col items-center flex-shrink-0 w-16">
-        <span className="text-xs font-semibold text-[#6B7280] leading-tight pt-4 text-right w-full">
+      <div className="flex flex-col items-center flex-shrink-0 w-11">
+        <span className="text-xs font-semibold text-[#6B7280] leading-tight pt-4 text-right w-full tabular-nums">
           {item.startTime || ''}
         </span>
       </div>
@@ -97,7 +97,7 @@ function TimelineItem({
       {/* Timeline dot + line */}
       <div className="flex flex-col items-center flex-shrink-0">
         <div
-          className="w-3 h-3 rounded-full mt-4 flex-shrink-0 ring-2 ring-white shadow"
+          className="w-2.5 h-2.5 rounded-full mt-4 flex-shrink-0 ring-2 ring-white shadow"
           style={{ backgroundColor: themeColor }}
         />
         {!isLast && (
