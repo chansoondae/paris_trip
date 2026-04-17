@@ -87,8 +87,9 @@ export const schedules: DaySchedule[] = [
           'https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e+d%27Orsay+Paris',
         category: 'museum',
         bookingStatus: 'booked',
-        note: '09:20 훈장 박물관 정문 앞 집결, 티켓 구매 완료',
+        note: '09:20 훈장 박물관 정문 앞 집결, 티켓 구매 완료 | 준비물: 물과 이어폰(3.5mm 둥근 단자, 미지참시 무상 대여)',
         imageUrl: '/images/musee-dorsay.jpg',
+        ticketUrl: '/tickets/orsay-ticket.pdf',
       },
       {
         id: 'day2-2',
@@ -180,6 +181,7 @@ export const schedules: DaySchedule[] = [
         bookingStatus: 'booked',
         note: '티켓 예약 완료',
         imageUrl: '/images/sainte-chapelle.jpg',
+        ticketUrl: '/tickets/sainte-chapelle-ticket.pdf',
       },
       {
         id: 'day3-2',
@@ -245,12 +247,11 @@ export const schedules: DaySchedule[] = [
         startTime: '09:00',
         title: '몽마르트 언덕 가이드 투어 (가이드랩)',
         description: '파리 예술가들의 성지 — 가이드랩 투어',
-        placeName: 'Montmartre Paris',
-        googleMapsUrl:
-          'https://www.google.com/maps/search/?api=1&query=Montmartre+Paris',
+        placeName: 'Métro Blanche (Ligne 2)',
+        googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Blanche+metro+station+Paris',
         category: 'landmark',
         bookingStatus: 'booked',
-        note: '티켓 구매 완료',
+        note: '집결 장소: 지하철 2호선 Blanche 역 출구 앞 (단일 출구) | 준비물: 3.5mm 둥근단자 이어폰, 물, 개인 간식',
         imageUrl: '/images/montmartre.jpg',
       },
       {

@@ -13,6 +13,7 @@ import {
   CalendarDays,
   PlaneTakeoff,
   Car,
+  Ticket,
 } from 'lucide-react';
 import { getDaySchedule, schedules } from '@/lib/data';
 import type { Category, BookingStatus, ScheduleItem } from '@/types/schedule';
@@ -157,6 +158,18 @@ function TimelineItem({
             <div className="bg-[#FAF7F2] rounded-lg px-3 py-2 mt-2">
               <p className="text-xs text-[#6B7280] leading-relaxed">💬 {item.note}</p>
             </div>
+          )}
+
+          {/* Ticket download */}
+          {item.ticketUrl && (
+            <a
+              href={item.ticketUrl}
+              download
+              className="inline-flex items-center gap-1.5 text-xs font-medium mt-3 mr-2 px-3 py-1.5 rounded-lg border transition-colors duration-150 bg-[#EAF4EB] text-[#5A8A5C] border-[#C4DEC6]"
+            >
+              <Ticket size={12} />
+              티켓 다운로드
+            </a>
           )}
 
           {/* Map link */}
