@@ -1,4 +1,4 @@
-export type Category = 'museum' | 'meal' | 'landmark' | 'cafe' | 'transport' | 'rest';
+export type Category = 'museum' | 'meal' | 'landmark' | 'cafe' | 'transport' | 'rest' | 'flight' | 'car';
 export type BookingStatus = 'booked' | 'need_booking' | 'not_required';
 
 export interface ScheduleItem {

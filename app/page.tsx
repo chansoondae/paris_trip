@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { schedules, TRAVEL_START_DATE } from '@/lib/data';
+import FontSizeControl from '@/components/FontSizeControl';
 
 function getDDayCount(): number {
   const today = new Date();
@@ -16,6 +17,8 @@ const categoryLabels: Record<string, string> = {
   cafe: '☕',
   transport: '🚶',
   rest: '🏨',
+  flight: '✈️',
+  car: '🚗',
 };
 
 export default function HomePage() {
@@ -28,18 +31,21 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#FAF7F2]">
       <div className="max-w-lg mx-auto px-4 py-8">
         {/* Header */}
-        <header className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-1.5 shadow-sm mb-4 border border-[#E8DDD0]">
-            <span className="text-sm font-medium text-[#6B7280]">2026.04.24 — 04.27</span>
-            <span className="text-xs font-bold text-[#C8A97E]">{ddayLabel}</span>
+        <header className="mb-8">
+          <div className="flex items-center justify-between mb-4">
+            <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-1.5 shadow-sm border border-[#E8DDD0]">
+              <span className="text-sm font-medium text-[#6B7280]">2026.04.24 — 04.27</span>
+              <span className="text-xs font-bold text-[#C8A97E]">{ddayLabel}</span>
+            </div>
+            <FontSizeControl />
           </div>
           <h1
-            className="text-4xl font-bold text-[#1A2332] mb-2"
+            className="text-4xl font-bold text-[#1A2332] mb-2 text-center"
             style={{ fontFamily: 'var(--font-playfair-display), serif' }}
           >
             🇫🇷 Voyage à Paris
           </h1>
-          <p className="text-[#6B7280] text-sm">경애·경숙·경미·경화의 특별한 여행</p>
+          <p className="text-[#6B7280] text-sm text-center">경애·경숙·경미·경화의 특별한 여행</p>
         </header>
 
         {/* Hotel */}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Noto_Sans_KR, Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
 import BottomNav from '@/components/BottomNav';
+import FontSizeProvider from '@/components/FontSizeProvider';
 
 const notoSansKR = Noto_Sans_KR({
   variable: '--font-noto-sans-kr',
@@ -40,6 +41,7 @@ export default function RootLayout({
       className={`${notoSansKR.variable} ${playfairDisplay.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-[#FAF7F2] text-[#1A2332]">
+        <FontSizeProvider />
         <div className="pb-20">{children}</div>
         <BottomNav />
       </body>

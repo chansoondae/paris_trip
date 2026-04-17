@@ -11,6 +11,8 @@ import {
   MapPin,
   ArrowLeft,
   CalendarDays,
+  PlaneTakeoff,
+  Car,
 } from 'lucide-react';
 import { getDaySchedule, schedules } from '@/lib/data';
 import type { Category, BookingStatus, ScheduleItem } from '@/types/schedule';
@@ -38,6 +40,10 @@ function CategoryIcon({ category }: { category: Category }) {
       return <Footprints {...iconProps} />;
     case 'rest':
       return <Hotel {...iconProps} />;
+    case 'flight':
+      return <PlaneTakeoff {...iconProps} />;
+    case 'car':
+      return <Car {...iconProps} />;
     default:
       return <CalendarDays {...iconProps} />;
   }
