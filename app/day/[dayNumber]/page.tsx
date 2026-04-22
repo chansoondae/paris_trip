@@ -161,15 +161,30 @@ function TimelineItem({
           )}
 
           {/* Ticket download */}
-          {item.ticketUrl && (
-            <a
-              href={item.ticketUrl}
-              download
-              className="inline-flex items-center gap-1.5 text-xs font-medium mt-3 mr-2 px-3 py-1.5 rounded-lg border transition-colors duration-150 bg-[#EAF4EB] text-[#5A8A5C] border-[#C4DEC6]"
-            >
-              <Ticket size={12} />
-              티켓 다운로드
-            </a>
+          {(item.ticketUrl || item.additionalTickets) && (
+            <div className="flex flex-wrap gap-2 mt-3">
+              {item.ticketUrl && (
+                <a
+                  href={item.ticketUrl}
+                  download
+                  className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors duration-150 bg-[#EAF4EB] text-[#5A8A5C] border-[#C4DEC6]"
+                >
+                  <Ticket size={12} />
+                  티켓 다운로드
+                </a>
+              )}
+              {item.additionalTickets?.map((t) => (
+                <a
+                  key={t.label}
+                  href={t.url}
+                  download
+                  className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors duration-150 bg-[#EAF4EB] text-[#5A8A5C] border-[#C4DEC6]"
+                >
+                  <Ticket size={12} />
+                  {t.label}
+                </a>
+              ))}
+            </div>
           )}
 
           {/* Additional map links */}

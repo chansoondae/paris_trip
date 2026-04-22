@@ -134,6 +134,7 @@ export const schedules: DaySchedule[] = [
         category: 'museum',
         bookingStatus: 'booked',
         ticketUrl: '/tickets/Orangerie-ticket.pdf',
+        additionalTickets: [{ label: '시간 예약', url: '/tickets/time-reservation.pdf' }],
         imageUrl: '/images/orangerie.jpg',
       },
       {
