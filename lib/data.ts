@@ -125,14 +125,15 @@ export const schedules: DaySchedule[] = [
       },
       {
         id: 'day2-4',
-        startTime: '14:30',
+        startTime: '15:00',
         title: '오랑주리 미술관',
         description: '모네의 수련 연작이 있는 미술관',
         placeName: 'Musée de l\'Orangerie',
         googleMapsUrl:
           'https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e+de+l%27Orangerie+Paris',
         category: 'museum',
-        bookingStatus: 'not_required',
+        bookingStatus: 'booked',
+        ticketUrl: '/tickets/Orangerie-ticket.pdf',
         imageUrl: '/images/orangerie.jpg',
       },
       {
@@ -181,6 +182,17 @@ export const schedules: DaySchedule[] = [
     title: '파리 클래식',
     themeColor: '#7BA05B',
     items: [
+      {
+        id: 'day3-0',
+        startTime: '07:00',
+        title: '아침 — 트로카데로 카페',
+        description: '에펠탑이 보이는 트로카데로 카페에서 커피와 빵으로 아침 식사',
+        placeName: 'Café du Trocadéro',
+        googleMapsUrl: 'https://maps.app.goo.gl/sHvTQgzA7kcNzRpf7',
+        category: 'cafe',
+        bookingStatus: 'not_required',
+        imageUrl: '/images/trocadero-cafe.jpg',
+      },
       {
         id: 'day3-1',
         startTime: '09:00',
@@ -330,6 +342,16 @@ export const schedules: DaySchedule[] = [
       },
       {
         id: 'day4-6',
+        title: '로댕 박물관',
+        description: '로댕의 조각 작품을 정원과 함께 감상',
+        placeName: 'Musée Rodin',
+        googleMapsUrl: 'https://maps.app.goo.gl/7w7bwWiLuwohXmsU7',
+        category: 'museum',
+        bookingStatus: 'not_required',
+        imageUrl: '/images/musee-rodin.jpg',
+      },
+      {
+        id: 'day4-7',
         title: '카페 — Les Deux Magots',
         description: '파리 생제르맹의 전설적인 카페. 바로 옆 Café de Flore도 좋아요 ☕',
         placeName: 'Les Deux Magots',
